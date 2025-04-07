@@ -1,6 +1,6 @@
 import com.example.Helper
 
-def determineBuildNumber(int buildNumber) {
-    def helper = new Helper()
+def determineBuildNumber(steps, int buildNumber) {
+    def helper = new Helper(steps)
     helper.determineOddOrEven(buildNumber)
 }

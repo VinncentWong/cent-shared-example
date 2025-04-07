@@ -2,11 +2,17 @@ package com.example
 
 public class Helper {
 
+    def steps
+
+    public Helper(steps) {
+        this.steps = steps
+    }
+
     void determineOddOrEven(int buildNumber) {
         if (buildNumber % 2 == 0) {
-            sh "echo Build Number: ${buildNumber} is even"
+            steps.sh "echo Build Number: ${buildNumber} is even"
         } else {
-            sh "echo Build Number: ${buildNumber} is odd"
+            steps.sh "echo Build Number: ${buildNumber} is odd"
         }
     }
 
