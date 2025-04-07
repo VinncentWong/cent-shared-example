@@ -1,6 +1,6 @@
 package com.example
 
-public class Helper {
+public class Helper implements Serializable {
 
     def steps
 
